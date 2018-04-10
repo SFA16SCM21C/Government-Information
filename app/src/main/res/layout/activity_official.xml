@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="381dp"
+        android:layout_height="24dp"
+        android:id="@+id/officialActLocTv"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="367dp"
+        android:layout_height="479dp"
+        app:layout_constraintTop_toBottomOf="@+id/officialActLocTv"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:scrollbars="vertical"
+        app:layout_constraintHorizontal_bias="0.75"
+        android:id="@+id/officalActContraint"
+        android:background="@color/colorBlack">
+
+        <TextView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="93dp"
+            android:id="@+id/ofcActAboutTv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/ofcActImgVw"
+            android:layout_width="151dp"
+            android:layout_height="148dp"
+            android:scaleType="center"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/ofcActAboutTv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.41" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:text="@string/address_str"
+            android:textStyle="normal|bold"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/ofcActImgVw"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:text="@string/phone_str"
+            android:textStyle="normal|bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/ofcActAddressTv"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:text="@string/email_str"
+            android:textStyle="normal|bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Website_str"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/textView12"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ofcActAddressTv"
+            android:layout_marginStart="24dp"
+            app:layout_constraintLeft_toRightOf="@+id/textView4"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/ofcActImgVw"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.63"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="31dp"
+            android:id="@+id/ofcActPhNumTv"
+            android:layout_marginStart="48dp"
+            app:layout_constraintLeft_toRightOf="@+id/textView5"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/ofcActAddressTv"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="228dp"
+            android:layout_height="28dp"
+            android:id="@+id/ofcActEmailTv"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/ofcActPhNumTv"
+            android:layout_marginStart="32dp"
+            app:layout_constraintLeft_toRightOf="@+id/textView6"
+            android:layout_marginLeft="32dp"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="233dp"
+            android:layout_height="20dp"
+            android:id="@+id/ofcActWebsiteTv"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/ofcActEmailTv"
+            android:layout_marginStart="32dp"
+            app:layout_constraintLeft_toRightOf="@+id/textView12"
+            android:layout_marginLeft="32dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.7"
+            android:textColor="@color/colorWhite"/>
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/glp"
+            android:id="@+id/googleImgVw"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/ofcActWebsiteTv" />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/fb"
+            android:id="@+id/facebookImgVw"
+            android:layout_marginStart="72dp"
+            app:layout_constraintLeft_toRightOf="@+id/googleImgVw"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/ofcActWebsiteTv" />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/tw"
+            android:id="@+id/twitterImgVw"
+            android:layout_marginStart="72dp"
+            app:layout_constraintLeft_toRightOf="@+id/facebookImgVw"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/ofcActWebsiteTv" />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/yt"
+            android:id="@+id/youImgVw"
+            android:layout_marginStart="72dp"
+            app:layout_constraintLeft_toRightOf="@+id/twitterImgVw"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/ofcActWebsiteTv"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
